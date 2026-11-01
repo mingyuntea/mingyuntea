@@ -11,27 +11,33 @@
     <!-- 1. 精準的歐美搜尋標題 -->
     <title>Ming Yun Taiwan Tea | Nature · Craft · Serenity</title>
     
-    <!-- 2. 您寫的故事與介紹（完美融入網頁敘述中） -->
+    <!-- 2. 您寫的故事與介紹 -->
     <meta name="description" content="MING YUN has shared Taiwanese tea in Europe for years through taiwanskycaj.cz. Now continuing directly from Taiwan, connecting European tea professionals with Taiwanese tea makers. Discover artisan loose leaf tea and cold brew bags.">
     
-    <!-- 3. Open Graph 標籤（確保 Meta/FB/WhatsApp 完美顯示英文預覽） -->
+    <!-- 3. Open Graph 標籤 -->
     <meta property="og:title" content="Ming Yun Taiwan Tea | Nature · Craft · Serenity">
     <meta property="og:description" content="Artisan Taiwanese tea connecting European tea professionals with Taiwanese tea makers. View our WhatsApp catalog.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mingyuntea.com">
 
-    <!-- 🌟 新增：這行會強迫 LinkedIn、FB、WhatsApp 抓取您的質感採茶大圖 🌟 -->
+    <!-- 圖片標籤 -->
     <meta property="og:image" content="https://mingyuntea.com">
 
-    <!-- 4. 0秒自動跳轉指令 -->
-    <meta http-equiv="refresh" content="0;url=https://wa.me">
+    <!-- 🌟 關鍵微調：把 0 秒改成 2 秒，給機器人時間讀取圖片 🌟 -->
+    <meta http-equiv="refresh" content="2;url=https://wa.me">
 </head>
 <body>
-    <p>Redirecting to Ming Yun Tea catalog on WhatsApp...</p>
+    <div style="text-align: center; margin-top: 10%; font-family: sans-serif; color: #333;">
+        <h2>Ming Yun Taiwan Tea</h2>
+        <p>Nature ‧ Craft ‧ Serenity</p>
+        <p style="color: #666; font-size: 14px;">Connecting to our WhatsApp catalog, please wait...</p>
+    </div>
     
-    <!-- 後備強制跳轉腳本 -->
+    <!-- 🌟 腳本同步延遲 2 秒強制跳轉 🌟 -->
     <script>
-        window.location.replace("https://wa.me");
+        setTimeout(function(){
+            window.location.replace("https://wa.me");
+        }, 2000);
     </script>
 </body>
 </html>
