@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 確保所有瀏覽器都不會抓錯舊資料 -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     
     <!-- 1. 精準的歐美搜尋標題 -->
     <title>Ming Yun Taiwan Tea | Nature · Craft · Serenity</title>
@@ -15,10 +20,15 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mingyuntea.com">
 
-    <!-- 4. 修正後的 0秒自動跳轉您的專屬目錄網址 -->
+    <!-- 4. 0秒自動跳轉指令 -->
     <meta http-equiv="refresh" content="0;url=https://wa.me/c/886921178480">
 </head>
 <body>
     <p>Redirecting to Ming Yun Tea catalog on WhatsApp...</p>
+    
+    <!-- 後備強制跳轉腳本（萬一歐美客戶的手機瀏覽器停用 Meta 跳轉，這行會強制推他一把） -->
+    <script>
+        window.location.replace("https://wa.me/c/886921178480");
+    </script>
 </body>
 </html>
